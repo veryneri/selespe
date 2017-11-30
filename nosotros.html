@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Selespe.com - Nosostros</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Description goes here">
+    <meta name="keywords" content="Keywords goes here">
+
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!--[if lt IE 8]>
+        <div style=' clear: both; text-align:center; position: relative;z-index:100;'>
+            <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a>
+        </div>
+    <![endif]-->
+  </head>
+  <body>
+    <div id="wrapper">
+      <section>
+        <div>
+          <div class="dynamicContent">
+              <!--content -->
+      				<div class="box">
+                <div class="col1">
+                  <h1>Nosotros</h1>
+                  <img src="images/about01.jpg" alt="" class="left border1 img1">
+                  <h4>
+                    Somos una empresa mexicana comprometida con el servicio de calidad.
+                  </h4>
+                  <p class="text">
+                    Contamos con amplia experiencia en la comercialización y mantenimiento a equipos de generación eéctrica como son: plantas de emergencia, transformadores, subestaciones eléctricas, UPS, VOZ y DATOS.
+                  </p>
+                  <div class="clear"></div>
+                  <p class="text">
+                    Nuestros servicios se caracterizan por ser efectivos y nuestros tiempos de entrega dentro de lo establecido gracias a nuestro amplio equipo de expertos.
+                    Todo esto manteniendo precios competitivos que nos permiten, no solo, trabajar con clientes reconocidos en proyectos a gran escala sino tambien con clientes en crecimiento con proyectos de menor escala pero no menor importancia.
+                    Nuestros principales objetivos siempre serán el éxito y satisfacción de nuestros la clientes.
+                  </p>
+                  <a href="contacto.html" class="button1">Conocénos</a>
+                </div>
+                <!-- box2
+                <div class="box2">
+                  <h2>testimonials</h2>
+                  <strong class="text">
+                    Adam Smith
+                  </strong>
+                  <i>
+                    "Ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod. tempor incididunt veniam, quis nostrud exercitation ullamco laborisi" &nbsp; <a href="index-2.html#">more</a>
+                  </i>
+                  <div class="line1"></div>
+                  <strong class="text">
+                    Jessica Pollak
+                  </strong>
+                  <i>
+                    "Ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod. tempor incididunt veniam, quis nostrud exercitation ullamco laborisi" &nbsp; <a href="index-2.html#">more</a>
+                  </i>
+                  <div class="line1"></div>
+                  <strong class="text">
+                    Pol  Newman
+                  </strong>
+                  <i>
+                    "Ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod. tempor incididunt veniam, quis nostrud exercitation ullamco laborisi" &nbsp; <a href="index-2.html#">more</a>
+                  </i>
+                </div>
+                <div class="clear"></div> -->
+              </div>
+              <!--content end -->
+
+      			</div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      $("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'dark',social_tools:false,allow_resize: true,default_width: 500,default_height: 344});
+
+      /////// menu_splash
+      $("#menu_splash li a").find(".txt1").css({opacity:0.2});
+      $("#menu_splash li a").hover(function() {
+        $(this).find(".txt1").stop().animate({marginTop:55 }, 400, 'swing');
+        $(this).find(".txt2").css({marginTop:-55}).stop().animate({marginTop:55 }, 400, 'swing');
+      },function(){
+        $(this).find(".txt1").css({marginTop:-55}).stop().animate({marginTop:0 }, 400, 'swing');
+        $(this).find(".txt2").stop().animate({marginTop:110 }, 400, 'swing');
+      });
+
+      /////// circles
+      $(".bulb1").find(".txt1, .over1").css({opacity:0});
+      $(".circle").hover(function() {
+        $(this).parent().find(".txt1").stop().animate({opacity:1 }, 400, 'swing');
+        $(this).parent().find(".over1").stop().animate({opacity:1 }, 400, 'swing');
+      },function(){
+        $(this).parent().find(".txt1").stop().animate({opacity:0 }, 400, 'swing');
+        $(this).parent().find(".over1").stop().animate({opacity:0 }, 400, 'swing');
+      });
+
+    </script>
+  </body>
+</html>
